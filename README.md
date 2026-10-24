@@ -137,7 +137,7 @@ jupyter lab
 
 ## ✍️ About the Author
 
-**Vaibhav Rastogi** is an Enterprise Data Architect based in Melbourne, Australia, and a doctoral researcher at Walsh College of Accountancy and Business Administration. He has founded Textuva, an enterprise data and artificial intelligence consultancy specializing in Artificial Intelligence and Large-Scale Data Systems.
+**Vaibhav Rastogi** is an Enterprise Data Architect based in Melbourne, Australia, and a doctoral researcher at Walsh College of Accountancy and Business Administration specializing in Artificial Intelligence and Large-Scale Data Systems. He has founded Textuva.
 
 - **GitHub:** [@v893979](https://github.com/v893979)
 - **ORCID:** [0009-0006-0900-4376](https://orcid.org/0009-0006-0900-4376)
