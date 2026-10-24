@@ -1,40 +1,51 @@
 # Modern Machine Learning & Data Science Engineering
-### Official Companion Code Repository & Datasets
+### Official Companion Code Repository, Practice Labs & Datasets
 
 [![Python Version](https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12-blue)](https://www.python.org/)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+[![Status](https://img.shields.io/badge/build-passing-brightgreen)](README.md)
 
-Welcome to the official source code and dataset repository for **Modern Machine Learning & Data Science Engineering: From First Principles to Real-World Solutions** by Vaibhav Rastogi.
+Welcome to the comprehensive official source code, dataset, and hands-on lab repository for **Modern Machine Learning & Data Science Engineering: From First Principles to Real-World Solutions** by Vaibhav Rastogi.
 
 ---
 
-## 📚 Repository Overview
+## 📚 Repository Architecture
 
-This repository contains clean, modular, self-contained Python scripts and realistic sample datasets corresponding directly to each chapter of the textbook. Every script can be executed standalone without complex external cloud infrastructure.
+This repository contains clean, modular, production-standard Python scripts and realistic enterprise datasets designed for active learning, experimentation, and industry practice.
 
 ```
-├── data/                                 # Sample datasets used across chapters
-│   ├── credit_risk_dataset.csv           # 1,000 credit risk profiles (Classification)
-│   ├── house_prices.csv                  # 500 housing properties (Regression)
-│   ├── customer_churn.csv                # 500 subscription customers (Churn modeling)
-│   └── knowledge_base_rag.json           # Domain documents for Vector RAG pipeline
+├── data/                                         # Production-grade enterprise sample datasets
+│   ├── credit_risk_dataset.csv                   # 1,000 credit loan profiles (Classification)
+│   ├── university_admissions.csv                 # 500 graduate admissions records (Multivariate OLS)
+│   ├── hotel_reservations.csv                    # 800 hospitality bookings (Cost-sensitive classification)
+│   ├── customer_rfm.csv                          # 600 customer transaction profiles (RFM Segmentation)
+│   ├── credit_card_fraud_sample.csv              # 1,000 transaction vectors (Imbalanced deep learning)
+│   ├── house_prices.csv                          # 500 residential properties (Regression)
+│   ├── customer_churn.csv                        # 500 telecom subscriber logs (Customer churn)
+│   └── knowledge_base_rag.json                   # Institutional knowledge manual (Vector RAG)
 │
-├── src/                                  # Chapter-by-chapter runnable implementations
-│   ├── ch01_02_python_foundations.py     # Python syntax, collections, comprehensions
-│   ├── ch03_numpy_arrays.py              # Vectorized math, standardization, matrix ops
-│   ├── ch04_pandas_and_duckdb.py         # Pandas wrangling & DuckDB embedded SQL
-│   ├── ch06_business_statistics.py       # t-Tests, ANOVA, Chi-Square, A/B testing
-│   ├── ch08_linear_and_logistic_regression.py # OLS & Logistic Regression with Scikit-Learn
-│   ├── ch09_trees_and_ensembles.py       # Random Forest, XGBoost & LightGBM
-│   ├── ch10_svm_and_clustering.py        # SVM (RBF), K-Means, DBSCAN clustering
-│   ├── ch11_pytorch_neural_network.py    # PyTorch MLP deep neural network
-│   └── ch14_rag_and_vector_db.py         # Dense embeddings, vector similarity & RAG
+├── src/                                          # Chapter-by-chapter runnable practice implementations
+│   ├── ch01_02_python_foundations.py             # Python syntax, collections, comprehensions
+│   ├── ch03_numpy_arrays.py                      # Vectorized math, standardization, matrix ops
+│   ├── ch04_pandas_and_duckdb.py                 # Pandas wrangling & DuckDB embedded SQL
+│   ├── ch06_business_statistics.py               # t-Tests, ANOVA, Chi-Square, A/B testing
+│   ├── ch07_word2vec_and_semantic_analogies.py   # Word2Vec vectors & King - Man + Woman = Queen math
+│   ├── ch08_linear_and_logistic_regression.py    # OLS & Logistic Regression with Scikit-Learn
+│   ├── ch08_ols_diagnostics_admissions.py        # OLS diagnostics, normal equations & Pearson correlations
+│   ├── ch09_trees_and_ensembles.py               # Random Forest, XGBoost & LightGBM
+│   ├── ch09_hotel_cancellation_cost_sensitive.py # Cost-sensitive business loss & threshold tuning
+│   ├── ch10_svm_and_clustering.py                # SVM (RBF), K-Means, DBSCAN clustering
+│   ├── ch10_rfm_customer_segmentation.py         # RFM log-transforms & K-Means persona clustering
+│   ├── ch11_pytorch_neural_network.py            # PyTorch MLP deep neural network
+│   ├── ch12_image_kernels_and_convolution.py     # Pure 2D spatial convolution & Sobel edge filters
+│   ├── ch13_fastapi_model_deployment.py          # Production FastAPI REST microservice architecture
+│   └── ch14_rag_and_vector_db.py                 # Dense embeddings, vector similarity & RAG pipeline
 │
-├── capstone/                             # Comprehensive End-to-End Capstone (Appendix C)
-│   └── credit_risk_engine.py             # Production credit scoring pipeline & decisioning
+├── capstone/                                     # Comprehensive End-to-End Capstone (Appendix C)
+│   └── credit_risk_engine.py                     # Production credit scoring pipeline & decision engine
 │
-├── requirements.txt                      # Pegged Python library dependencies
-└── README.md                             # Repository documentation
+├── requirements.txt                              # Pegged Python library dependencies
+└── README.md                                     # Repository documentation
 ```
 
 ---
@@ -63,44 +74,53 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### 4. Run Any Script
+### 4. Run Any Practice Script
 ```bash
-# Example 1: Run Logistic Regression Baseline
-python src/ch08_linear_and_logistic_regression.py
+# Word2Vec semantic vector analogy math (King - Man + Woman = Queen)
+python src/ch07_word2vec_and_semantic_analogies.py
 
-# Example 2: Run PyTorch Deep Neural Network Training
-python src/ch11_pytorch_neural_network.py
+# Multivariate OLS regression diagnostics on university admissions
+python src/ch08_ols_diagnostics_admissions.py
 
-# Example 3: Run the Complete Credit Risk Capstone Engine
+# Cost-sensitive classification & threshold tuning on hotel cancellations
+python src/ch09_hotel_cancellation_cost_sensitive.py
+
+# Unsupervised RFM customer segmentation clustering
+python src/ch10_rfm_customer_segmentation.py
+
+# Computer Vision: Spatial 2D convolution & Sobel edge filtering
+python src/ch12_image_kernels_and_convolution.py
+
+# End-to-End Credit Risk Capstone Engine
 python capstone/credit_risk_engine.py
 ```
 
 ---
 
-## 📖 Book Curriculum & Chapter Mapping
+## 📖 Book Curriculum & Practice Mapping
 
-| Chapter | Title & Focus | Companion Source Code |
+| Chapter | Core Concepts & Analytical Focus | Companion Source Code |
 | :--- | :--- | :--- |
-| **Ch 1–2** | Python Foundations, Lists, Dictionaries & Sets | `src/ch01_02_python_foundations.py` |
-| **Ch 3** | Numerical Computing with NumPy & Vectorization | `src/ch03_numpy_arrays.py` |
-| **Ch 4** | Data Manipulation with Pandas, DuckDB & Polars | `src/ch04_pandas_and_duckdb.py` |
-| **Ch 5** | Exploratory Data Analysis (EDA) & Visualization | `src/ch04_pandas_and_duckdb.py` |
-| **Ch 6** | Business Statistics: Probability & Hypothesis Testing | `src/ch06_business_statistics.py` |
-| **Ch 7** | Text Processing & NLP Foundations | `src/ch14_rag_and_vector_db.py` |
-| **Ch 8** | Core Supervised Learning: Linear & Logistic Regression | `src/ch08_linear_and_logistic_regression.py` |
-| **Ch 9** | Trees, Random Forests, XGBoost & LightGBM | `src/ch09_trees_and_ensembles.py` |
-| **Ch 10** | SVM Hyperplanes, K-Means & DBSCAN Clustering | `src/ch10_svm_and_clustering.py` |
-| **Ch 11** | Deep Learning & Artificial Neural Networks (PyTorch) | `src/ch11_pytorch_neural_network.py` |
-| **Ch 12** | Computer Vision & Convolutional Neural Networks (CNNs)| `src/ch11_pytorch_neural_network.py` |
-| **Ch 13** | Machine Learning in Practice: Tuning, ONNX & MLOps | `capstone/credit_risk_engine.py` |
-| **Ch 14** | Generative AI, Vector Databases & RAG Architectures | `src/ch14_rag_and_vector_db.py` |
-| **App C** | Industrial Capstone: Credit Risk Assessment Engine | `capstone/credit_risk_engine.py` |
+| **Ch 1–2** | Python Foundations, Lists, Dicts, Comprehensions & Error Handling | `src/ch01_02_python_foundations.py` |
+| **Ch 3** | Numerical Computing with NumPy, Matrix Math & Vectorization | `src/ch03_numpy_arrays.py` |
+| **Ch 4** | Data Wrangling with Pandas, DuckDB Embedded SQL & Polars | `src/ch04_pandas_and_duckdb.py` |
+| **Ch 5** | Exploratory Data Analysis (EDA), Outliers & Visual Diagnostics | `src/ch04_pandas_and_duckdb.py` |
+| **Ch 6** | Business Statistics: Probability, A/B Testing, t-Tests & Chi-Square | `src/ch06_business_statistics.py` |
+| **Ch 7** | NLP Foundations, Dense Word Embeddings & Vector Analogies | `src/ch07_word2vec_and_semantic_analogies.py` |
+| **Ch 8** | Core Supervised Learning: Linear & Logistic Regression, OLS Auditing | `src/ch08_ols_diagnostics_admissions.py` |
+| **Ch 9** | Tree Ensembles, LightGBM, Cost-Sensitive Loss & Threshold Optimization | `src/ch09_hotel_cancellation_cost_sensitive.py` |
+| **Ch 10** | SVM Hyperplanes, K-Means & Unsupervised RFM Customer Segmentation | `src/ch10_rfm_customer_segmentation.py` |
+| **Ch 11** | Deep Learning, Neural Network Math & PyTorch Architecture | `src/ch11_pytorch_neural_network.py` |
+| **Ch 12** | Computer Vision: 2D Spatial Convolution, Sobel Filters & Pooling | `src/ch12_image_kernels_and_convolution.py` |
+| **Ch 13** | Machine Learning in Practice: FastAPI REST Serving, Pydantic & MLOps | `src/ch13_fastapi_model_deployment.py` |
+| **Ch 14** | Generative AI, Dense Vector Databases & RAG Architectures | `src/ch14_rag_and_vector_db.py` |
+| **App C** | Industrial Capstone: End-to-End Real-World Credit Risk Engine | `capstone/credit_risk_engine.py` |
 
 ---
 
 ## ✍️ About the Author
 
-**Vaibhav Rastogi** is Founder & Director at Textuva, an independent Enterprise Data Architect based in Melbourne, Australia, and a doctoral researcher at Walsh College of Accountancy and Business Administration focusing on Artificial Intelligence and Large-Scale Data Systems.
+**Vaibhav Rastogi** is Founder & Director at Textuva, an independent Enterprise Data Architect based in Melbourne, Australia, and a doctoral researcher at Walsh College of Accountancy and Business Administration specializing in Artificial Intelligence and Large-Scale Data Systems.
 
 - **GitHub:** [@v893979](https://github.com/v893979)
 - **ORCID:** [0009-0006-0900-4376](https://orcid.org/0009-0006-0900-4376)
