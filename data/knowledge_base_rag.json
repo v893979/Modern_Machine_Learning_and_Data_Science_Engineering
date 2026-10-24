@@ -1,0 +1,26 @@
+[
+  {
+    "doc_id": "FAQ-001",
+    "category": "Loan Requirements",
+    "title": "Minimum Credit Score for Mortgage Pre-Approval",
+    "content": "Our automated underwriting guidelines require a minimum FICO credit score of 620 for conforming conventional mortgages. For FHA loans, applicants with scores down to 580 are eligible with a 3.5% down payment."
+  },
+  {
+    "doc_id": "FAQ-002",
+    "category": "Underwriting & DTI",
+    "title": "Debt-to-Income (DTI) Thresholds",
+    "content": "The maximum qualifying Debt-to-Income (DTI) ratio is 43% for standard automated underwriting. Borrowers with significant compensating cash reserves and credit scores above 740 may be approved up to 49.9% DTI."
+  },
+  {
+    "doc_id": "FAQ-003",
+    "category": "Employment Verification",
+    "title": "Self-Employed Borrower Income Verification",
+    "content": "Self-employed applicants must supply two consecutive years of federal tax returns (IRS Form 1040 including Schedule C or K-1). Business bank statements from the trailing 12 months are analyzed to calculate average monthly cash flow."
+  },
+  {
+    "doc_id": "FAQ-004",
+    "category": "Interest Rates & Points",
+    "title": "Discount Points and Annual Percentage Rate (APR)",
+    "content": "Borrowers may purchase optional discount points at closing to lower their ongoing interest rate. One discount point equals 1% of the total loan amount and typically reduces the note rate by 0.25%."
+  }
+]
