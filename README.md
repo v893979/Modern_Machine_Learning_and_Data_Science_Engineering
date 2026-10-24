@@ -18,6 +18,8 @@ You do not need to install anything locally to start coding. Click any badge bel
 
 | Chapter / Project | Topics Covered | 1-Click Colab Launch | Companion Python Script |
 | :--- | :--- | :---: | :---: |
+| **⭐ Ch 01 Beginner Lab: Python from Scratch** | Variables, Types, Triage Math, Loops, Functions, Exercises | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/v893979/Modern_Machine_Learning_and_Data_Science_Engineering/blob/main/notebooks/ch01_python_fundamentals_hands_on_lab.ipynb) | [`src/ch01_python_fundamentals_hands_on_lab.py`](src/ch01_python_fundamentals_hands_on_lab.py) |
+| **⭐ Ch 02 Beginner Lab: Collections & Case Study** | Slicing, Sets, Dicts, Comprehensions, ApexPay FinTech Project | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/v893979/Modern_Machine_Learning_and_Data_Science_Engineering/blob/main/notebooks/ch02_data_structures_hands_on_lab.ipynb) | [`src/ch02_data_structures_hands_on_lab.py`](src/ch02_data_structures_hands_on_lab.py) |
 | **Ch 01 & 02: Python Foundations** | Lists, Dicts, Sets, Comprehensions, Defensive Code | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/v893979/Modern_Machine_Learning_and_Data_Science_Engineering/blob/main/notebooks/ch01_02_python_foundations.ipynb) | [`src/ch01_02_python_foundations.py`](src/ch01_02_python_foundations.py) |
 | **Ch 03: NumPy Arrays** | Vectorization, Broadcasting, 12-Month Store Sales | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/v893979/Modern_Machine_Learning_and_Data_Science_Engineering/blob/main/notebooks/ch03_numpy_arrays.ipynb) | [`src/ch03_numpy_arrays.py`](src/ch03_numpy_arrays.py) |
 | **Ch 04: Pandas & DuckDB** | Cleaning Pipelines, Imputation, SQL on DataFrames | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/v893979/Modern_Machine_Learning_and_Data_Science_Engineering/blob/main/notebooks/ch04_pandas_and_duckdb.ipynb) | [`src/ch04_pandas_and_duckdb.py`](src/ch04_pandas_and_duckdb.py) |
@@ -70,8 +72,10 @@ This application allows loan officers to:
 │   ├── house_prices.csv                # King County housing sales dataset
 │   ├── knowledge_base_rag.json         # RAG enterprise knowledge base
 │   └── university_admissions.csv       # Graduate admissions data for OLS
-├── notebooks/                          # 19 standalone Jupyter Notebooks with Colab badges
+├── notebooks/                          # 21 standalone Jupyter Notebooks with Colab badges
 ├── src/                                # Standalone runnable Python scripts and synced notebooks
+│   ├── ch01_python_fundamentals_hands_on_lab.py
+│   ├── ch02_data_structures_hands_on_lab.py
 │   ├── ch01_02_python_foundations.py
 │   ├── ch03_numpy_arrays.py
 │   ├── ch04_pandas_and_duckdb.py
@@ -114,7 +118,7 @@ venv\Scripts\activate          # On Windows
 pip install -r requirements.txt
 
 # 4. Run any chapter script
-python src/ch09_trees_and_ensembles.py
+python src/ch01_python_fundamentals_hands_on_lab.py
 ```
 
 ---
